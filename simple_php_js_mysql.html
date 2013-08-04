@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+		<title>InfoTech Tools Rating Page</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script type="text/javascript" language="javasccript">
+			function isFormValid(form)
+			{
+				var result = isItemSelected(form.oracle,"oracle") && result;
+				var result = isItemSelected(form.css,"css") && result;
+				var result = isItemSelected(form.libx,"libx") && result;
+				var result = isItemSelected(form.googledrive,"googledrive") && result;
+				var result = isItemSelected(form.notepadplus,"notepadplus") && result;
+				var result = isItemSelected(form.html,"html") && result;
+				var result = isItemSelected(form.filezilla,"filezilla") && result;
+				var result = isItemSelected(form.javascript,"javascript") && result;
+				var result = isItemSelected(form.php,"php") && result;
+				var result = isItemSelected(form.mysql,"mysql") && result;
+				return result;
+			}
+			
+			function isItemSelected(items,labelID)
+			{
+				for (var i=0; i<items.length; i++)
+				{
+					if (items[i].checked)
+					{
+						document.getElementById(labelID).style.backgroundColor = "white";
+						return true;
+					}
+				}
+				document.getElementById(labelID).style.backgroundColor = "red";
+				return false;
+			}
+		</script>
+	</head>
+	<body>
+	<h2>Please rate your experience using the following tools:</h2>
+		<form action="save_form.php" onsubmit="return isFormValid(this)" method="POST">
+			<table>
+				<tr>
+					<td>
+						<div id="ji">
+							Oracle
+							
+							<label id="oracle"> was </label><br/>
+								<input type="radio" name="oracle" value="1" id="styled">
+								</input>
+									<label>Very Easy</label><br/>
+								<input type="radio" name="oracle" value="2" id="styled">
+								</input>
+									<label>Easy</label><br/>
+								<input type="radio" name="oracle" value="3" id="styled">
+								</input>
+									<label>Okay</label><br/>
+								<input type="radio" name="oracle" value="4" id="styled">
+								</input>
+									<label>Difficult</label><br/>
+								<input type="radio" name="oracle" value="5" id="styled">
+								</input>
+									<label>Very Difficult</label>
+						</div>
+					</td>
+					</tr>
+				
+				<tr>
+					<td>
+						<div id="pb">
+							CSS
+							
+							<label id="css"> was </label><br/>
+								<input type="radio" name="css" value="1" id="styled">
+								</input>
+									<label>Very Easy</label><br/>
+								<input type="radio" name="css" value="2" id="styled">
+								</input>
+									<label>Easy</label><br/>
+								<input type="radio" name="css" value="3" id="styled">
+								</input>
+									<label>Okay</label><br/>
+								<input type="radio" name="css" value="4" id="styled">
+								</input>
+									<label>Difficult</label><br/>
+								<input type="radio" name="css" value="5" id="styled">
+								</input>
+									<label>Very Difficult</label>
+						</div>
+					</td>
+					</tr>
+				
+				<tr>
+					<td>
+						<div id="fl">
+							LibX
+							
+							<label id="libx"> was </label><br/>
+								<input type="radio" name="libx" value="1" id="styled">
+								</input>
+									<label>Very Easy</label><br/>
+								<input type="radio" name="libx" value="2" id="styled">
+								</input>
+									<label>Easy</label><br/>
+								<input type="radio" name="libx" value="3" id="styled">
+								</input>
+									<label>Okay</label><br/>
+								<input type="radio" name="libx" value="4" id="styled">
+								</input>
+									<label>Difficult</label><br/>
+								<input type="radio" name="libx" value="5" id="styled">
+								</input>
+									<label>Very Difficult</label>
+						</div>
+					</td>
+					</tr>
+				
+				<tr>
+					<td>
+						<div id="go">
+							Google Drive
+							
+							<label id="googledrive"> was </label><br/>
+								<input type="radio" name="googledrive" value="1" id="styled">
+								</input>
+									<label>Very Easy</label><br/>
+								<input type="radio" name="googledrive" value="2" id="styled">
+								</input>
+									<label>Easy</label><br/>
+								<input type="radio" name="googledrive" value="3" id="styled">
+								</input>
+									<label>Okay</label><br/>
+								<input type="radio" name="googledrive" value="4" id="styled">
+								</input>
+									<label>Difficult</label><br/>
+								<input type="radio" name="googledrive" value="5" id="styled">
+								</input>
+									<label>Very Difficult</label>
+						</div>
+					</td>
+					</tr>
+				
+				<tr>
+					<td>
+						<div id="tw">
+							Notepad++
+							
+							<label id="notepadplus"> was </label><br/>
+								<input type="radio" name="notepadplus" value="1" id="styled">
+								</input>
+									<label>Very Easy</label><br/>
+								<input type="radio" name="notepadplus" value="2" id="styled">
+								</input>
+									<label>Easy</label><br/>
+								<input type="radio" name="notepadplus" value="3" id="styled">
+								</input>
+									<label>Okay</label><br/>
+								<input type="radio" name="notepadplus" value="4" id="styled">
+								</input>
+									<label>Difficult</label><br/>
+								<input type="radio" name="notepadplus" value="5" id="styled">
+								</input>
+									<label>Very Difficult</label>
+						</div>
+					</td>
+					</tr>
+					<tr>
+					<td>
+						<div id="ht">
+							HTML
+							
+							<label id="html"> was </label><br/>
+								<input type="radio" name="html" value="1" id="styled">
+								</input>
+									<label>Very Easy</label><br/>
+								<input type="radio" name="html" value="2" id="styled">
+								</input>
+									<label>Easy</label><br/>
+								<input type="radio" name="html" value="3" id="styled">
+								</input>
+									<label>Okay</label><br/>
+								<input type="radio" name="html" value="4" id="styled">
+								</input>
+									<label>Difficult</label><br/>
+								<input type="radio" name="html" value="5" id="styled">
+								</input>
+									<label>Very Difficult</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="cs">
+							FileZilla
+							
+							<label id="filezilla"> was </label><br/>
+								<input type="radio" name="filezilla" value="1" id="styled">
+								</input>
+									<label>Very Easy</label><br/>
+								<input type="radio" name="filezilla" value="2" id="styled">
+								</input>
+									<label>Easy</label><br/>
+								<input type="radio" name="filezilla" value="3" id="styled">
+								</input>
+									<label>Okay</label><br/>
+								<input type="radio" name="filezilla" value="4" id="styled">
+								</input>
+									<label>Difficult</label><br/>
+								<input type="radio" name="filezilla" value="5" id="styled">
+								</input>
+									<label>Very Difficult</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="ja">
+							JavaScript
+							
+							<label id="javascript"> was </label><br/>
+								<input type="radio" name="javascript" value="1" id="styled">
+								</input>
+									<label>Very Easy</label><br/>
+								<input type="radio" name="javascript" value="2" id="styled">
+								</input>
+									<label>Easy</label><br/>
+								<input type="radio" name="javascript" value="3" id="styled">
+								</input>
+									<label>Okay</label><br/>
+								<input type="radio" name="javascript" value="4" id="styled">
+								</input>
+									<label>Difficult</label><br/>
+								<input type="radio" name="javascript" value="5" id="styled">
+								</input>
+									<label>Very Difficult</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="ph">
+							PHP
+							
+							<label id="php"> was </label><br/>
+								<input type="radio" name="php" value="1" id="styled">
+								</input>
+									<label>Very Easy</label><br/>
+								<input type="radio" name="php" value="2" id="styled">
+								</input>
+									<label>Easy</label><br/>
+								<input type="radio" name="php" value="3" id="styled">
+								</input>
+									<label>Okay</label><br/>
+								<input type="radio" name="php" value="4" id="styled">
+								</input>
+									<label>Difficult</label><br/>
+								<input type="radio" name="php" value="5" id="styled">
+								</input>
+									<label>Very Difficult</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="my">
+							MySQL
+							
+							<label id="mysql"> was </label><br/>
+								<input type="radio" name="mysql" value="1" id="styled">
+								</input>
+									<label>Very Easy</label><br/>
+								<input type="radio" name="mysql" value="2" id="styled">
+								</input>
+									<label>Easy</label><br/>
+								<input type="radio" name="mysql" value="3" id="styled">
+								</input>
+									<label>Okay</label><br/>
+								<input type="radio" name="mysql" value="4" id="styled">
+								</input>
+									<label>Difficult</label><br/>
+								<input type="radio" name="mysql" value="5" id="styled">
+								</input>
+									<label>Very Difficult</label>
+						</div>
+					</td>
+				</tr>
+			</table>
+			<input type="submit" value="Submit Form" />
+			<input type="reset" value="Reset Form" />
+		</form>
+	</body>
+</html>
